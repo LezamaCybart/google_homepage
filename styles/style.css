@@ -2,7 +2,7 @@ main {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 140px;
   flex-direction: column;
 }
 
@@ -18,6 +18,8 @@ input {
   max-width: 600px;
   margin: auto;
   font-size: large;
+  font-weight: lighter;
+  color: #3b3b3b;
 }
 
 textarea:focus, input:focus{
@@ -94,4 +96,42 @@ i {
 
 a {
     text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 9px;
+  font-family: arial, sans-serif;
+  font-size: small;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+#apps_icon {
+    padding-top: 6px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+#profile_icon {
+    font-size: 25px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
