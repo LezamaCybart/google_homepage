@@ -1,3 +1,11 @@
+html {
+  overflow-y: hidden;
+}
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
 main {
   display: block;
   justify-content: center;
@@ -22,8 +30,9 @@ input {
   color: #3b3b3b;
 }
 
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus,
+input:focus {
+  outline: none;
 }
 
 #buttons {
@@ -85,17 +94,16 @@ i {
   align-content: space-between;
 }
 
-.languageregion
-{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    font-family: arial, sans-serif;
-    font-size: small;
+.languageregion {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: arial, sans-serif;
+  font-size: small;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
@@ -120,18 +128,104 @@ li a {
 }
 
 li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #apps_icon {
-    padding-top: 6px;
-    padding-right: 0px;
-    padding-left: 0px;
-    font-size: 15px;
+  padding-top: 6px;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 15px;
 }
 
 #profile_icon {
-    font-size: 25px;
-    padding-top: 0px;
-    padding-left: 0px;
+  font-size: 25px;
+  padding-top: 0px;
+  padding-left: 0px;
 }
+
+/* inicio footer */
+
+footer {
+  position: absolute;
+  background-color: #f7f7f7;
+  height: 76px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.country {
+  height: 38px;
+  background-color: #f7f7f7;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding-left: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(228, 228, 228);
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+
+.listas {
+  height: 38px;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+
+.sub-list {
+  display: inline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.linklistitem {
+  display: inline;
+  padding-top: 9px;
+  padding-right: 30px;
+  font-size: medium;
+  color: #646464;
+}
+
+@media only screen and (max-width: 930px) {
+  footer {
+    height: 114px;
+  }
+  .footer-list {
+    text-align: center;
+  }
+
+  .listas {
+    height: 76px;
+  }
+
+  .left {
+    display: block;
+    float: none;
+    height: 38px;
+  }
+
+  .right {
+    display: block;
+    float: none;
+    height: 38px;
+  }
+
+  .leftitems {
+    float: none;
+    display: inline;
+  }
+
+  .rightitems {
+    float: none;
+    display: inline;
+  }
+}
+
+/* fin footer */
