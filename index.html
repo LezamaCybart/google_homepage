@@ -32,25 +32,32 @@
       <div id="imgdiv">
         <img id="logo" src="images/logo.png" alt="" />
       </div>
-      <div id="formdiv">
+      <form id="formdiv" action="https://google.com/search">
         <div class="formcont">
           <i class="fas fa-search"></i>
-          <input type="text" />
+          <input name="q" type="search"/>
           <i class="fas fa-microphone"></i>
         </div>
-      </div>
-      <div id="buttons">
-        <button>Google Search</button>
-        <span class="buttonmargin"></span>
-        <button>I'm Feeling Lucky</button>
-      </div>
+        <div id="buttons">
+          <button type="submit">Google Search</button>
+          <span class="buttonmargin"></span>
+          <button type="submit">I'm Feeling Lucky</button>
+        </div>
+      </form>
       <div class="languageregion">
         <p>Google offered in: <a href="#">Language (Region)</a></p>
       </div>
     </main>
     <footer>
       <div class="country">
-        <p style="color: #646464; padding: 10px 0px 0px 0px; margin-top: 0; margin-bottom: 0">
+        <p
+          style="
+            color: #646464;
+            padding: 10px 0px 0px 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+          "
+        >
           Country
         </p>
       </div>
@@ -58,10 +65,18 @@
         <ul class="footer-list">
           <li class="left">
             <ul class="sub-list">
-              <li class="leftitems"><a class="linklistitem" href="#">How Search Works</a></li>
-              <li class="leftitems"><a class="linklistitem" href="#">About</a></li>
-              <li class="leftitems"><a class="linklistitem" href="#">Business</a></li>
-              <li class="leftitems"><a class="linklistitem" href="#">Advertising</a></li>
+              <li class="leftitems">
+                <a class="linklistitem" href="#">How Search Works</a>
+              </li>
+              <li class="leftitems">
+                <a class="linklistitem" href="#">About</a>
+              </li>
+              <li class="leftitems">
+                <a class="linklistitem" href="#">Business</a>
+              </li>
+              <li class="leftitems">
+                <a class="linklistitem" href="#">Advertising</a>
+              </li>
             </ul>
           </li>
 
